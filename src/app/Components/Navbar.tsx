@@ -171,7 +171,6 @@ function Navbar() {
           <svg
             onClick={() => {
               setNavbarOpen(!navbarOpen);
-              console.log(navbarOpen);
             }}
             className="md:hidden z-50"
             xmlns="http://www.w3.org/2000/svg"
