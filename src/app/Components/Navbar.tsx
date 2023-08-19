@@ -1,12 +1,21 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(true);
   const handleScroll = () => {
     setNavbarOpen(false);
   };
-  window.addEventListener("scroll", () => handleScroll());
+
+  useEffect(() => {
+    // Add the scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="nav-and-svgs-container flex items-center flex-col w-full fixed xl:absolute overflow-hidden">
       <nav className="py-4 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 bg-neutral-800 w-full flex justify-between items-center">
@@ -157,7 +166,7 @@ function Navbar() {
           </svg>
         </div>
         {/* Menu Container */}
-        <div className="w-full flex justify-end">
+        <div className="w-full flex justify-end z-10">
           {/* Menu button SVG */}
           <svg
             onClick={() => {
