@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 function Navbar() {
-  const [navbarOpen, setNavbarOpen] = useState(true);
+  const [navbarOpen, setNavbarOpen] = useState(false);
   const handleScroll = () => {
     setNavbarOpen(false);
   };
