@@ -232,38 +232,37 @@ export default function Home() {
           </h1>
           {/* Projects Container */}
           <div className="flex flex-col gap-8 w-full">
-            {/* Individual Projects */}
+            {/* Project 1 */}
             <div className="flex flex-col lg:flex-row w-full gap-4 xl:gap-16 text-neutral-50">
               {/* Project IMG */}
-              <div className=" bg-neutral-600 aspect-video lg:w-[462.22px]"></div>
+              <div className=" project-1"></div>
               {/* Decription and buttons */}
               <div className="flex flex-col md:flex-row gap-4 items-center lg:w-[540px] xl:w-[818px]">
                 {/* Desc */}
                 <div className="flex flex-col text-start">
                   {/* Title */}
-                  <h3 className="text-2xl">Lorem Ipsum</h3>
+                  <h3 className="text-2xl">Amphion</h3>
                   {/* Text */}
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    A completely original project designed and built from
+                    scratch consisting of a Landing page + Ecommerce platform
+                    for a (not real) company that sells luxury headphones. Built
+                    with NextJS 13, Tailwind, Prisma, Context API, Supabase, and
+                    connected to PayPal.
                   </p>
                 </div>
                 {/* Buttons */}
                 <div className="flex md:flex-col gap-4 items-center justify-center">
                   <a
-                    href="#"
+                    href="https://github.com/Sohyb01/Amphion/tree/main"
+                    target="_blank"
                     className="w-[122px] h-[122px] grid items-center text-center bg-neutral-800 text-neutral-50  hover:bg-neutral-50 hover:text-neutral-800 border-solid border-[2px] border-neutral-50 text-lg duration-200"
                   >
                     Project Code
                   </a>
                   <a
-                    href="#"
+                    href="https://amphion-x8zv.vercel.app/"
+                    target="_blank"
                     className="w-[122px] h-[122px] grid items-center text-center  bg-white text-neutral-800 hover:bg-neutral-800 hover:text-neutral-50 border-solid border-[2px] border-neutral-50 text-lg duration-200"
                   >
                     Live Project
@@ -271,37 +270,72 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            {/* Project 2*/}
             <div className="flex flex-col lg:flex-row w-full gap-4 xl:gap-16 text-neutral-50">
               {/* Project IMG */}
-              <div className=" bg-neutral-600 aspect-video lg:w-[462.22px]"></div>
+              <div className="project-2"></div>
               {/* Decription and buttons */}
               <div className="flex flex-col md:flex-row gap-4 items-center lg:w-[540px] xl:w-[818px]">
                 {/* Desc */}
                 <div className="flex flex-col text-start">
                   {/* Title */}
-                  <h3 className="text-2xl">Lorem Ipsum</h3>
+                  <h3 className="text-2xl">CarHub</h3>
                   {/* Text */}
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    A project that showcases multiple cars to rent, using data &
+                    images pulled from an external API, with the ability to
+                    filter through the cars available based on the model,
+                    manufacturer, and more.
                   </p>
                 </div>
                 {/* Buttons */}
                 <div className="flex md:flex-col gap-4 items-center justify-center">
                   <a
-                    href="#"
+                    href="https://github.com/Sohyb01/Car-Hub/tree/main"
+                    target="_blank"
                     className="w-[122px] h-[122px] grid items-center text-center bg-neutral-800 text-neutral-50  hover:bg-neutral-50 hover:text-neutral-800 border-solid border-[2px] border-neutral-50 text-lg duration-200"
                   >
                     Project Code
                   </a>
                   <a
-                    href="#"
+                    href="https://car-hub-gilt-gamma.vercel.app/"
+                    target="_blank"
+                    className="w-[122px] h-[122px] grid items-center text-center  bg-white text-neutral-800 hover:bg-neutral-800 hover:text-neutral-50 border-solid border-[2px] border-neutral-50 text-lg duration-200"
+                  >
+                    Live Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* Project 3*/}
+            <div className="flex flex-col lg:flex-row w-full gap-4 xl:gap-16 text-neutral-50">
+              {/* Project IMG */}
+              <div className="project-3"></div>
+              {/* Decription and buttons */}
+              <div className="flex flex-col md:flex-row gap-4 items-center lg:w-[540px] xl:w-[818px]">
+                {/* Desc */}
+                <div className="flex flex-col text-start">
+                  {/* Title */}
+                  <h3 className="text-2xl">Space Tourism</h3>
+                  {/* Text */}
+                  <p>
+                    A basic React app with multiple pages with data that is
+                    being displayed using the map function, with routing
+                    implemented using react-router-dom.
+                  </p>
+                </div>
+                {/* Buttons */}
+                <div className="flex md:flex-col gap-4 items-center justify-center">
+                  <a
+                    href="https://github.com/Sohyb01/sohyb01.github.io"
+                    target="_blank"
+                    className="w-[122px] h-[122px] grid items-center text-center bg-neutral-800 text-neutral-50  hover:bg-neutral-50 hover:text-neutral-800 border-solid border-[2px] border-neutral-50 text-lg duration-200"
+                  >
+                    Project Code
+                  </a>
+                  <a
+                    href="https://sohyb01.github.io/"
+                    target="_blank"
                     className="w-[122px] h-[122px] grid items-center text-center  bg-white text-neutral-800 hover:bg-neutral-800 hover:text-neutral-50 border-solid border-[2px] border-neutral-50 text-lg duration-200"
                   >
                     Live Project
@@ -327,7 +361,7 @@ export default function Home() {
               Education & Background
             </h3>
             <p className="text-start text-lg">
-              I graduated in 2023 with a Bachelors in science in Artificial
+              I graduated in 2023 with a Bachelors of science in Artificial
               Intelligence. I spent a lot of my time in college learning about
               programming, software, and web development.
             </p>

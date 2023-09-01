@@ -33,3 +33,17 @@ html {
 .menu-closed{
   transform: translateY(calc(-100vh - 100px));
 }
+
+/* Projects */
+.project-1{
+    background-image: url(./images/Project_1.png);
+  @apply aspect-video lg:w-[462.22px] bg-cover
+}
+.project-2{
+  background-image: url(./images/Project_2.jpg);
+  @apply aspect-video lg:w-[462.22px] bg-cover
+}
+.project-3{
+  background-image: url(./images/Project_3.jpg);
+  @apply aspect-video lg:w-[462.22px] bg-cover
+}
