@@ -412,10 +412,9 @@ export default function Home() {
             Contact Me
           </h1>
           {/* Footer Content Container */}
-          <div className="flex flex-col lg:flex-row gap-8 items-center justify-center w-full h-fit">
+          <div className="flex flex-col gap-8 items-center justify-center w-full h-fit">
             {/* Contact Form all */}
-            <form className="flex flex-col gap-4 lg:w-[640px]" action="">
-              {/* name and email */}
+            {/* <form className="flex flex-col gap-4 lg:w-[640px]" action="">
               <div className="flex gap-4 w-full">
                 <input
                   placeholder="Name"
@@ -436,12 +435,10 @@ export default function Home() {
               <button className="bg-neutral-800 text-neutral-50 py-2 px-4">
                 Send Message
               </button>
-            </form>
+            </form> */}
             {/* Barrier */}
-            <div className="w-full h-[1px] bg-neutral-400 rounded-full lg:hidden"></div>
-            <div className="h-[263.16px] w-[1px] bg-neutral-400 rounded-full hidden lg:flex"></div>
             {/* Socials */}
-            <div className="flex lg:flex-col lg:items-start gap-8 flex-wrap justify-center w-auto text-neutral-800">
+            <div className="flex flex-wrap lg:items-start gap-8 justify-center w-auto text-neutral-800">
               <div className="flex gap-2 items-center justify-center fill-neutral-800 hover:text-blue-500 hover:fill-blue-500 duration-200">
                 <svg
                   className="w-[20px] fill-inherit"
@@ -504,6 +501,7 @@ export default function Home() {
                 <p>Github</p>
               </a>
             </div>
+            <div className="w-full h-[1px] bg-neutral-400 rounded-full"></div>
           </div>
         </section>
       </div>
