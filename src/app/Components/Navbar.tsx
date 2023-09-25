@@ -77,7 +77,6 @@ function Navbar() {
             </a>
             <a
               href="#contact"
-              target="_blank"
               className="button-styles text-xs text-white bg-black border-black hover:text-black hover:bg-white duration-100 w-full"
             >
               GET IN TOUCH
@@ -123,7 +122,7 @@ function Navbar() {
               href="#contact"
               className="button-styles text-neutral-800 bg-white border-neutral-800 hover:text-white hover:bg-neutral-800 duration-100 w-full font-bold"
             >
-              Contact
+              GET IN TOUCH
             </a>
             {/* <button
               onClick={() => {
