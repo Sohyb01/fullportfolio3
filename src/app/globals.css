@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 72px;
 }
 
 :root {
@@ -16,16 +17,17 @@ html {
   --background-end-rgb: 255, 255, 255;
 }
 
-.default__section-styles{
+.section__styles{
   @apply 
-  w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl
-  px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-[96px]
-  flex flex-col gap-4 items-center
-  mx-auto
+  w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg
+  px-4 sm:px-6 md:px-8 lg:px-10
 }
 .skill__styling{
   @apply
-  flex gap-3 py-2 px-3 lg:px-5 items-center justify-start shadow-lg border-neutral-100 border-[1px] border-solid w-[184px] h-[88px] md:w-[216px] md:h-[108px]
+  flex gap-3 px-4 items-center justify-start w-[204px] h-[86px] md:w-[216px] md:h-[92px] font-bold
+}
+.button-styles{
+@apply tagline text-xs font-bold flex items-center justify-center px-6 py-4 pt-[18px] border-[3px]
 }
 .menu-open{
   transform: translateY(0px);
@@ -34,16 +36,28 @@ html {
   transform: translateY(calc(-100vh - 100px));
 }
 
+.tagline{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 150%;
+}
+.heading{
+  letter-spacing: -2px;
+  line-height: 120%;
+}
+.divider{
+  @apply w-16 h-0.5 rounded-full bg-rose-600
+}
 /* Projects */
+.project-img{
+  @apply aspect-video w-full bg-cover border-b-[2px] border-neutral-300 lg:min-h-[272px]
+}
 .project-1{
     background-image: url(./images/Project_1.png);
-  @apply aspect-video lg:w-[462.22px] bg-cover
 }
 .project-2{
   background-image: url(./images/Project_2.jpg);
-  @apply aspect-video lg:w-[462.22px] bg-cover
 }
 .project-3{
   background-image: url(./images/Project_3.jpg);
-  @apply aspect-video lg:w-[462.22px] bg-cover
 }

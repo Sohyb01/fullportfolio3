@@ -1,11 +1,21 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import localFont from "next/font/local";
 import Navbar from "./Components/Navbar";
 
-const cormorant_garamond = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "700"],
+const helvetica = localFont({
+  src: [
+    {
+      path: "../../public/Helvetica/Helvetica CE Medium/Helvetica CE Medium.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/Helvetica/Helvetica CE Bold/Helvetica CE Bold.otf",
+      weight: "700",
+      style: "bold",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cormorant_garamond.className}>
+      <body className={helvetica.className}>
         <Navbar></Navbar>
         {children}
       </body>
