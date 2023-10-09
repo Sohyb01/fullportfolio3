@@ -6,12 +6,12 @@ import Navbar from "./Components/Navbar";
 const helvetica = localFont({
   src: [
     {
-      path: "../../public/Helvetica/Helvetica CE Medium/Helvetica CE Medium.otf",
+      path: "../../public/Helvetica/Helvetica.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/Helvetica/Helvetica CE Bold/Helvetica CE Bold.otf",
+      path: "../../public/Helvetica/Helvetica-Bold.ttf",
       weight: "700",
       style: "bold",
     },
